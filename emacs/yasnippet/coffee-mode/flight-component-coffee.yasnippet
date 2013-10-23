@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: flight-component
+# key: fc
+# --
+define (require) ->
+  defineComponent = require 'flight/lib/component'
+ 
+  $1 = ->
+    @defaultAttrs
+      $2
+
+    @after 'initialize', ->
+      $3
+ 
+  defineComponent $1

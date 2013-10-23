@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+define(function(require) {
+  var defineComponent = require('flight/lib/component');
+
+  return defineComponent(${1});
+
+  function ${1}() {
+    this.defaultAttrs({
+
+    });
+
+    this.after('initialize', function() {
+
+    });
+  }
+});
+]]></content>
+  <tabTrigger>fc</tabTrigger>
+  <scope>source.js</scope>
+  <description>default flight component</description>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <!-- <tabTrigger>hello</tabTrigger> -->
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

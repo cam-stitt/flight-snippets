@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+define (require) ->
+  defineComponent = require 'flight/lib/component'
+
+  ${1} = ->
+    @defaultAttrs
+
+    @after 'initialize', ->
+      ${2}
+
+  defineComponent ${1}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fc</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.coffee</scope>
+    <description>CoffeeScript Flight Component</description>
+</snippet>

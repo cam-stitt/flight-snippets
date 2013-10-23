@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: flight-component
+# key: fc
+# --
+define(function(require) {
+  var defineComponent = require('flight/lib/component');
+ 
+  return defineComponent($1);
+ 
+  function $1() {
+    this.defaultAttrs({
+      $2
+    });
+ 
+    this.after('initialize', function() {
+      $3
+    });
+  }
+});
