@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: flight-component-test
+# key: fct
+# --
+"use strict";
+
+describeComponent("$1", function() {
+  beforeEach(function() {
+    setupComponent();
+  });
+
+  it("$2", function() {
+    $3
+  });
+});

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: flight-component-test
+# key: fct
+# --
+"use strict"
+
+describeComponent "$1", ->
+  beforeEach ->
+    setupComponent()
+
+  it "$2", ->
+    $3
